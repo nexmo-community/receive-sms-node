@@ -7,7 +7,7 @@ const app = express();
 app.use(json());
 app.use(
 	urlencoded({
-		extended: "true",
+		extended: "true"
 	})
 );
 
@@ -29,7 +29,7 @@ function handleParams(params, res) {
 			from: params.msisdn,
 			text: params.text,
 			type: params.type,
-			timestamp: params["message-timestamp"],
+			timestamp: params["message-timestamp"]
 		};
 		console.log("Success", incomingData);
 	}
